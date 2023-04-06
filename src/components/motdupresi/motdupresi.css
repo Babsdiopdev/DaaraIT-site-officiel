@@ -1,0 +1,63 @@
+
+:root {
+    --bluePrimary : #0C1F3C;
+    --blueAccent : #2359AD;
+    --blueSecondary : #006FCE;
+    --greyPrimary : #F2F2F2;
+    --greySecondary : #E2E2E2 ;
+    --white : #FFF;
+  
+  }
+
+section{
+    width: 100%;
+    margin-top: 3%;
+    padding: 80px;
+    background-color: var(--greyPrimary);
+
+}
+
+.motdupresident{
+    width: 100%;
+    position: relative;
+}
+
+.titrePr{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--bluePrimary);
+    margin-bottom: 50px;
+    padding-left: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-left: 10px solid var(--blueAccent);
+
+}
+
+.photoPresident{
+    width: 30% ;
+    height: 400px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.textdupresident{
+    display: inline-block;
+    width: 67%;
+    height: 400px;
+    overflow: hidden;
+    padding: 0 30px;
+    margin: 0;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.name{
+    color:  var(--blueSecondary);
+}
+
+.slogan{
+    position: absolute;
+    color:  var(--blueSecondary);
+    font-size: small;
+    font-family: cursive;
+    bottom: 0;
+}

@@ -1,0 +1,48 @@
+:root {
+    --bluePrimary : #0C1F3C;
+    --blueAccent : #2359AD;
+    --blueSecondary : #006FCE;
+    --greyPrimary : #F2F2F2;
+    --greySecondary : #E2E2E2 ;
+    --white : #FFF;
+  
+  }
+
+  .Partenaires{
+    padding: 80px;
+    width: 100%;
+  }
+
+.titreP{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--bluePrimary);
+    margin-bottom: 50px;
+    padding-left: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-left: 10px solid var(--blueAccent);
+
+}
+
+.logos{
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .logos::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.logo{
+    width: 150px;
+    height: 130px;
+    margin: 50px;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0.3, 0.3, 0.1, 0.1); /* Ajoute une ombre légère */
+
+}

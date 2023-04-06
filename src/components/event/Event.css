@@ -1,0 +1,114 @@
+.grid-item {
+  background-color: var(--white);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 3px;
+}
+.headerCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerCard > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.headerCard > div > span {
+  width: 40px;
+  height: 35px;
+  background-color: var(--greySecondary);
+}
+.headerCard > div > h4 {
+  font-family: sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+}
+.headerCard > button {
+  font-family: sans-serif;
+  border: 1px solid #000;
+  padding: 3px 8px;
+  font-size: 8px;
+  font-weight: 600;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.cardBody .category {
+  display: flex;
+  gap: 10px;
+}
+.cardBody .category > span {
+  font-family: sans-serif;
+  font-size: 8px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 3px;
+  color: var(--white);
+}
+.cardBody .category > span:nth-child(1) {
+  background-color: var(--blueAccent);
+}
+.cardBody .category > span:nth-child(2) {
+  background-color: #3a8fc3;
+}
+.cardBody .category > span:nth-child(3) {
+  background-color: #87cefa;
+}
+.cardimage {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+.subtitle {
+  font-family: sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: justify;
+}
+.description {
+  font-family: sans-serif;
+  font-size: 10px;
+  line-height: 24px;
+  text-align: justify;
+}
+.cardfooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardfooter > button {
+  font-family: sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 3px;
+  color: var(--white);
+  background-color: var(--blueAccent);
+}
+.dateview {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.dateview > span {
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  gap: 5px;
+  font-size: 10px;
+  font-weight: bold;
+}
+.icon {
+  color: #3a8fc3;
+}

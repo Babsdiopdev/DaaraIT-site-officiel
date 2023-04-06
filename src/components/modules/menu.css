@@ -1,0 +1,93 @@
+nav {
+  text-align: center;
+}
+a,
+a > span,
+footer > div > span {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+.menu {
+  list-style: none;
+  display: inline-block;
+}
+.logo .link {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.imageLogo {
+  width: 45px;
+}
+.menu > li {
+  float: left;
+  position: relative;
+  color: white;
+  cursor: pointer;
+}
+.menu > li:hover {
+  transition: all ease-in-out 500ms;
+}
+
+ul.drop-menu {
+  top: 100%;
+  left: 0%;
+  width: fit-content;
+}
+ul.drop-menu li {
+  text-align: left;
+  color: black;
+}
+
+ul.drop-menu a {
+  display: none;
+}
+li:hover > li {
+  color: black;
+}
+li:hover > ul.drop-menu {
+  perspective: 1000px;
+}
+li:hover > ul.drop-menu a {
+  display: block;
+}
+
+li:hover > ul.drop-menu a {
+  opacity: 0;
+  transform: rotateY(-90) translateY(30px);
+  animation: animate 400ms ease-in-out forwards;
+}
+li:hover > ul.drop-menu a:nth-child(2) {
+  animation-delay: 100ms;
+}
+li:hover > ul.drop-menu a:nth-child(3) {
+  animation-delay: 200ms;
+}
+li:hover > ul.drop-menu a:nth-child(4) {
+  animation-delay: 300ms;
+}
+li:hover > ul.drop-menu a:nth-child(5) {
+  animation-delay: 400ms;
+}
+li:hover > ul.drop-menu a:nth-child(6) {
+  animation-delay: 500ms;
+}
+li:hover > ul.drop-menu a:nth-child(7) {
+  animation-delay: 600ms;
+}
+@keyframes animate {
+  0% {
+    opacity: 1;
+    transform: rotateX(90deg);
+    transform-origin: top;
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
