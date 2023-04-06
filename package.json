@@ -2,11 +2,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
     "@emailjs/browser": "^3.10.0",
-=======
     "@tabler/icons-react": "^2.13.1",
->>>>>>> 8bdd315e9a7a0d87e8fa576f233af8d4565112d0
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -14,11 +11,8 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
-<<<<<<< HEAD
     "react-hook-form": "^7.43.9",
-=======
     "react-icons": "^4.8.0",
->>>>>>> 8bdd315e9a7a0d87e8fa576f233af8d4565112d0
     "react-scripts": "5.0.1",
     "sweetpagination": "^1.0.15",
     "web-vitals": "^2.1.4"
