@@ -23,7 +23,7 @@ section{
 }
 
 .titrePr{
-    font-size: 2rem;
+    /* font-size: 2rem; */
     font-weight: bold;
     color: var(--bluePrimary);
     margin-bottom: 50px;

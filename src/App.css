@@ -7,3 +7,19 @@
   --white : #FFF;
 
 }
+
+a.active{
+  border-bottom: 3.5px solid #0C1F3C;
+}
+
+.bg-contacts{
+  background-color: var(--blueSecondary);
+}
+
+.input{
+  all: "unset";
+  background-color: "#fff";
+  padding:10px 20px;
+  font-size: 14;
+}
+@import "react-alice-carousel/lib/alice-carousel.css";

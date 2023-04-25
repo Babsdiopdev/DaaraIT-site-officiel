@@ -1,9 +1,9 @@
 import React from 'react'
-import SideMenu from '../modules/sidemenu'
+import SideMenu from '../../components/modules/sidemenu'
 import {ReactComponent as RightArrow} from "../../ressources/icons/right-arrow.svg"
 import CommissionHeader from "../../ressources/images/commission.png"
-import Menu from "../modules/menu"
-import Footer from '../modules/footer'
+import Menu from "../../components/modules/menu"
+import Footer from '../../components/modules/footer'
 
 const CommissionsDetails = () => {
   return (

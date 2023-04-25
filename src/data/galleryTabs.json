@@ -1,20 +1,78 @@
 [
     {
-        "text": "Tous"
+        "text": "Tous",
+        "tab": "all",
+        "images": [
+            "kennedy/kennedy1.jpg",
+            "kennedy/kennedy2.jpg",
+            "atayaTech/ataya1.jpg",
+            "atayaTech/ataya2.jpg",
+            "ndogouCoding/ndg1.jpg",
+            "ndogouCoding/ndg2.JPG",
+            "ndogouCoding/ndg3.JPG",
+            "ndogouCoding/ndg4.JPG",
+            "ndogouCoding/ndg5.jpg",
+            "ndogouCoding/ndg6.jpg",
+            "ndogouCoding/ndg7.jpg",
+            "saaxCat/saax1.jpg",
+            "saaxCat/saax2.jpg",
+            "saaxCat/saax3.jpg",
+            "zig/zig1.JPG",
+            "zig/zig2.JPG",
+            "zig/zig3.JPG",
+            "zig/zig4.JPG",
+            "zig/zig5.JPG",
+            "zig/zig6.JPG"
+        ]
     },
     {
-        "text": "EDGE"
+        "text": "Kennedy",
+        "tab": "kennedy",
+        "images": [
+            "kennedy/kennedy1.jpg",
+            "kennedy/kennedy2.jpg"
+        ]
     },
     {
-        "text": "SUP'INFO"
+        "text": "Ataya Tech",
+        "tab": "atayaTech",
+        "images": [
+            "atayaTech/ataya1.jpg",
+            "atayaTech/ataya2.jpg"
+        ]
     },
     {
-        "text": "ISM"
+        "text": "Ndogou Coding",
+        "tab": "ndogouCoding",
+        "images": [
+            "ndogouCoding/ndg1.jpg",
+            "ndogouCoding/ndg2.JPG",
+            "ndogouCoding/ndg3.JPG",
+            "ndogouCoding/ndg4.JPG",
+            "ndogouCoding/ndg5.jpg",
+            "ndogouCoding/ndg6.jpg",
+            "ndogouCoding/ndg7.jpg"
+        ]
     },
     {
-        "text": "UAHB"
+        "text": "Saxx CAT",
+        "tab": "saaxCat",
+        "images": [
+            "saaxCat/saax1.jpg",
+            "saaxCat/saax2.jpg",
+            "saaxCat/saax3.jpg"
+        ]
     },
     {
-        "text": "IAM"
+        "text": "Ziguinchor",
+        "tab": "zig",
+        "images": [
+            "zig/zig1.JPG",
+            "zig/zig2.JPG",
+            "zig/zig3.JPG",
+            "zig/zig4.JPG",
+            "zig/zig5.JPG",
+            "zig/zig6.JPG"
+        ]
     }
 ]

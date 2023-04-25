@@ -7,11 +7,12 @@ import Footer from '../components/modules/footer';
 
 const AppTemplate = () => {
   return (
+    
     <div className="relative w-full h-screen">
       <Menu />
       <div className="corps flex">
         <SideMenu />
-        <div className="content w-full ml-[50px] mt-[45px] bg-[#F2F2F2]">
+        <div className="content w-full  sm:ml-[50px] mt-[45px] bg-[#F2F2F2]">
           <Outlet />
         </div>
       </div>

@@ -27,7 +27,7 @@ footer > div > span {
 .menu > li {
   float: left;
   position: relative;
-  color: white;
+  /* color: white; */
   cursor: pointer;
 }
 .menu > li:hover {

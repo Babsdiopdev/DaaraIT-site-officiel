@@ -1,5 +1,11 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import {
+  Navbar,
+  MobileNav,
+  Typography,
+  Button,
+  IconButton,
+} from '@material-tailwind/react';
 import logo from '../../images/logo-dit.png';
 import { sidebarRoutes } from '../../routes/sidebar.routes';
 import MenuItem from '../menu/MenuItem';
@@ -8,49 +14,91 @@ import ResourceDataMap from '../ResourceDataMap';
 import './menu.css';
 
 const Menu = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [openNav, setOpenNav] = React.useState(false);
+
+  React.useEffect(() => {
+    window.addEventListener(
+      'resize',
+      () => window.innerWidth >= 960 && setOpenNav(false)
+    );
+  }, []);
+
+  const navList = (
+    <ul className="mb-4 mt-2 flex flex-col md:gap-4 gap-1 md:p-0 p-4  lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 bg-white">
+      <ResourceDataMap
+        resourceData={sidebarRoutes}
+        resourceItem={MenuItem}
+        resourceName="menuItem"
+      />
+    </ul>
+  );
   return (
-    <div className="fixed z-[100] top-0 w-full h-[45px] flex items-center justify-between px-8 text-sm text-gray-900 bg-white shadow-xl">
-      <div className="logo">
-        <Link to="/" className="link">
-          <img
-            className="imageLogo"
-            src={logo}
-            alt="logo daara it "
-            style={{}}
-          />
-          Daara IT
-        </Link>
+    <Navbar className="fixed inset-0 z-10 h-[60px] max-w-full rounded-none py-2 px-4 lg:px-8 lg:py-4">
+      <div className="flex items-center justify-between text-gray-900">
+        <Typography
+          as="a"
+          href="#"
+          className="mr-4 cursor-pointer flex items-center py-1.5 text-2xl font-semibold  text-gray-900"
+        >
+          <img src={logo} class="h-8 w-[50px] mr-3" alt="Flowbite Logo" /> Daara
+          IT
+        </Typography>
+        <div className="flex items-center gap-4">
+          <div className="mr-4 hidden lg:block">{navList}</div>
+          <Button
+            variant="gradient"
+            size="sm"
+            className="hidden lg:inline-block"
+          >
+            <span>Buy Now</span>
+          </Button>
+          <IconButton
+            variant="text"
+            className="ml-auto h-6 w-6  mb-3 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden  text-gray-900"
+            ripple={false}
+            onClick={() => setOpenNav(!openNav)}
+          >
+            {openNav ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                className="h-6 w-6"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            )}
+          </IconButton>
+        </div>
       </div>
-      <div className="list-items h-full flex items-center justify-cente ">
-        <ul className="list h-full flex items-center justify-between">
-          <ResourceDataMap 
-            resourceData={sidebarRoutes}
-            resourceItem={MenuItem}
-            resourceName="menuItem"
-          />
-        </ul>
-      </div>
-    </div>
+      <MobileNav open={openNav}>
+        {navList}
+        <Button variant="gradient" size="sm" fullWidth className="mb-2">
+          <span>Buy Now</span>
+        </Button>
+      </MobileNav>
+    </Navbar>
   );
 };
-/*
 
-    return (
-        <div className='fixed z-[100] top-0 w-full h-[45px] flex items-center justify-between px-8 text-sm text-gray-900 bg-white shadow-xl'>
-            <div className="logo"><a href="">LOGO</a></div>
-            <div className="list-items h-full flex items-center justify-cente">
-                <ul className="list h-full flex items-center justify-between">
-                    <li className="item h-full flex items-center ml-8 px-2 py-[2px] hover:scale-110 hover:border-b-[2px] hover:border-black hover:pb-0 duration-150"><a href="" className=''>Accueil</a></li>
-                    <li className="item h-full flex items-center ml-8 px-2 py-[2px] hover:scale-110 hover:border-b-[2px] hover:border-black hover:pb-0 duration-150"><a href="" className=''>A propos</a></li>
-                    <li className="item h-full flex items-center ml-8 px-2 py-[2px] hover:scale-110 hover:border-b-[2px] hover:border-black hover:pb-0 duration-150"><a href="" className=''>Forum</a></li>
-                    <li className="item h-full flex items-center ml-8 px-2 py-[2px] hover:scale-110 hover:border-b-[2px] hover:border-black hover:pb-0 duration-150"><a href="" className=''>Evénemants</a></li>
-                    <li className="item h-full flex items-center ml-8 px-2 py-[2px] hover:scale-110 hover:border-b-[2px] hover:border-black hover:pb-0 duration-150"><a href="" className=''>Commissions</a></li>
-                    <li className="item h-full flex items-center ml-8 px-2 py-[2px] hover:scale-110 hover:border-b-[2px] hover:border-black hover:pb-0 duration-150"><a href="" className=''>Galerie</a></li>
-                </ul>
-            </div>
-        </div>
-    )
-*/
-
-export default Menu
+export default Menu;

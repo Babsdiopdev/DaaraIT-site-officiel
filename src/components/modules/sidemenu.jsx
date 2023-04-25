@@ -8,7 +8,7 @@ import {ReactComponent as HomeIcon} from "../../ressources/icons/home.svg"
 
 const SideMenu = () => {
     return (
-        <div className='h-screen w-[50px] fixed top-0 bg-[#0C1F3C] flex items-end'>
+        <div className='h-screen w-[50px] hidden sm:block fixed top-0 bg-[#0C1F3C] flex items-end'>
             <div className="w-full h-full flex items-center justify-between flex-col pb-2">
                 <li className="vide"></li>
                 <ul className="h-full flex items-center justify-center flex-col">

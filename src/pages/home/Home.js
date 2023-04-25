@@ -1,6 +1,5 @@
 import React from "react";
 import HomeCommission from "../../components/commissions/homeCommission";
-import Input from "../../components/forms/input";
 import HeaderSection from "../../components/headerSection/headerSection";
 import Actualites from "./Actualites";
 import MotDuPresident from "./MotDuPresident";
@@ -11,7 +10,7 @@ import Contact from "./Contact";
 const Home = () => {
 
   return (
-    <div className="w-full h-auto">
+    <div className="w-full">
       {/* <div>Banner</div> */}
       {/* <HomeCommission /> */}
       <HeaderSection />

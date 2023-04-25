@@ -9,7 +9,7 @@ import img2 from '../../res/images/';
 import img3 from '../../res/images/';
 import img4 from '../../res/images/';
 import img5 from '../../res/images/';
-import Tab from "./Tab";
+import Tab from "../../components/commissions/Tab";
 import { Data } from './data';
 import { useLocation } from "react-router";
 
